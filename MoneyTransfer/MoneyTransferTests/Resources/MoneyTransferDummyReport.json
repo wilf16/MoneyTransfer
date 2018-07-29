@@ -1,0 +1,24 @@
+{
+  "data":
+  {
+    "sender": 
+    {
+      "account_name":"Pigy Super Savings",
+      "account_number":"1234567890"
+    },
+    "receiver": 
+    {
+      "name":"Wilfred Derfliw",
+      "account_number":"0987654321",
+      "bank_name":"Pigy Bank"
+    },
+    "transfer_amount":
+    {
+      "value":30000.00,
+      "currency":"HKD"
+    },
+    "date":"2018-07-28 10:17:03 +0000",
+    "notes":"Payment for Money Transfer Project",
+    "message":"It was nice doing business with you. I'll be giving you a call again if we have a new project. Thanks!"
+  }
+}

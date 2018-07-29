@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransferAmountViewController" customModule="MoneyTransfer" customModuleProvider="target">
+            <connections>
+                <outlet property="amountTextField" destination="hhd-65-nbv" id="NNY-5a-hyJ"/>
+                <outlet property="currencyButton" destination="USt-IJ-faG" id="B9y-wh-KtK"/>
+                <outlet property="currencyPickerView" destination="9Md-U9-V25" id="d9c-qS-ihh"/>
+                <outlet property="nextButton" destination="5mZ-FZ-I6w" id="Aac-JG-36s"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hhd-65-nbv">
+                    <rect key="frame" x="16" y="40" width="265" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USt-IJ-faG">
+                    <rect key="frame" x="289" y="40" width="70" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="dRH-7B-zya"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="selectCurrency:" destination="-1" eventType="touchUpInside" id="z9v-Fu-qQP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mZ-FZ-I6w">
+                    <rect key="frame" x="16" y="78" width="343" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="IoY-hf-hxN"/>
+                    </constraints>
+                    <state key="normal" title="Next">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="acceptAmount:" destination="-1" eventType="touchUpInside" id="TVT-ME-mh6"/>
+                    </connections>
+                </button>
+                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Md-U9-V25">
+                    <rect key="frame" x="0.0" y="505" width="375" height="162"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="USt-IJ-faG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="JCW-Ke-TYl"/>
+                <constraint firstItem="hhd-65-nbv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="LvP-ha-drs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="USt-IJ-faG" secondAttribute="trailing" constant="16" id="T3y-FA-aHr"/>
+                <constraint firstItem="5mZ-FZ-I6w" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="gNu-vf-sMg"/>
+                <constraint firstItem="5mZ-FZ-I6w" firstAttribute="top" secondItem="hhd-65-nbv" secondAttribute="bottom" constant="8" id="jmb-nz-Az5"/>
+                <constraint firstItem="USt-IJ-faG" firstAttribute="leading" secondItem="hhd-65-nbv" secondAttribute="trailing" constant="8" id="u8f-Bk-NIr"/>
+                <constraint firstItem="hhd-65-nbv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="v2c-mb-DT0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5mZ-FZ-I6w" secondAttribute="trailing" constant="16" id="zDh-8N-cE0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>
