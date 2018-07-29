@@ -1,8 +1,8 @@
 # MoneyTransfer
 A simple prototype money transfer app that uses Protocol Oriented Programming, TDD and MVVM Architecture.
 
-![alt text](screenshots/Simulator Screen Shot - iPhone X - 2018-07-29 at 21.59.55.png)
-![alt text](screenshots/Simulator Screen Shot - iPhone X - 2018-07-29 at 22.03.14.png)
+![alt text](MoneyTransfer/screenshots/Simulator Screen Shot - iPhone X - 2018-07-29 at 21.59.55.png)
+![alt text](MoneyTransfer/screenshots/Simulator Screen Shot - iPhone X - 2018-07-29 at 22.03.14.png)
 
 This project was developed by following Protocol Oriented Programming and Test Driven Development using Model View ViewModel Architecture.
 
